@@ -1,16 +1,70 @@
-# React + Vite
+## QR_Code_Generator 📱
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React app to generate QR codes from any text or URL.  
+Part of the [React Mini Projects](../README.md) collection.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- Generate QR codes dynamically from text or URLs
+- Real-time preview
+- Responsive and mobile-friendly design
+- Lightweight and easy to extend
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## How to Run
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone the repository or navigate inside your main repo:
+
+```bash
+cd QR_Code_Generator
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Start the development server:
+
+```bash
+npm run dev
+```
+
+4. Open the app in your browser at:
+
+http://localhost:5173
+
+---
+
+## Usage
+
+1. Type any text or URL in the input box.
+2. The QR code will generate instantly below the input.
+3. Scan it using your phone or QR scanner to test.
+
+---
+
+## Project Structure
+
+QR_Code_Generator/
+├─ public/          # Static assets, optional screenshots
+├─ src/             # React source code
+│  ├─ App.jsx       # Main component
+│  ├─ App.css       # Styling
+│  └─ main.jsx      # App entry
+├─ package.json
+├─ package-lock.json
+├─ node_modules/    # Ignored in Git
+└─ README.md        # Project documentation
+
+---
+
+## Example
+
+- Type: https://example.com
+- The QR code appears below
+- Scan it to open the link
